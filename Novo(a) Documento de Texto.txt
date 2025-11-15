@@ -1,0 +1,60 @@
+let numero1 = 7;
+let numero2 = 3;
+let numero3 = 8;
+let mediaaprovaçao = 7;
+let media = (numero1 + numero2+ numero3) / 3
+
+if(media >=mediaaprovaçao){
+  document.write("O aluno aprovou com:" + media.toFixed(2))
+}
+else{
+  document.write('O aluno reprovou com:' + media.toFixed(2))
+}
+
+____________________________________________________________________
+
+
+let numero = 8;
+
+if(numero%2==0){
+  document.write("O numero é par ");
+}
+else{
+  document.write("O numero é impar");
+}
+
+____________________________________________________________________
+
+let numero = parseInt(prompt("Digite um numero"));
+let resultado = 0;
+for(let i=0; i<=10; i++){
+  resultado= numero*i;
+  document.write( numero + "x" + i + "=" + resultado + "<br>");
+}
+
+____________________________________________________________________
+
+let peso = 70;
+let altura = 1.80;
+let IMC = peso / (altura*altura);
+
+if(IMC >= 18.5 && IMC <= 24.9){
+  document.write("saudavel");
+  
+}else if(IMC >= 17 && IMC <= 18.4){
+  document.write("magreza");
+  
+}else if(IMC >= 16 && IMC <= 16.9){
+  document.write("magreza leve" );
+}else {
+  document.write("morto de fome");
+}
+
+____________________________________________________________________
+
+let idade = 20;
+
+document.write("Dias: " + idade * 365 + "<br>");
+document.write("Horas: " + idade * 365 * 24 +"<br>");
+document.write("Minutos: " + idade * 365 * 24 * 60 + "<br>");
+document.write("Segundos: " + idade * 365 * 24 *60* 60 + "<br>");

@@ -1,0 +1,66 @@
+https://javascript.webflexivel.com.br/exercicio/4
+
+Questão 1)
+let valor = parseFloat(prompt("Digite o valor "));
+let numero = 15;
+
+let preco = valor * (numero / 100 );
+let precoF = valor - preco;
+
+document.write( "Valor do pedido sem desconto: " + valor +" <br> O valor com desconto é: " + precoF);
+
+
+--------------------------------------------------------------------------------------------
+
+Questão 2)
+let altura = 1.75;
+let peso = 80;
+let IMC = peso / (altura*altura);
+
+if(IMC <18.5){
+  console.log("Abaixo do peso normal");
+}else if(IMC >= 18.5 && IMC <= 24.9){
+  console.log("Peso Normal");
+}else if(IMC >= 25 && IMC <= 29.9){
+  console.log("Excesso de peso");
+}else if(IMC >= 30){
+  console.log("Obesidade");
+}
+
+------------------------------------------------------------------------------------------
+Questão 3)
+
+let numero = parseInt(prompt("digite o valor"));
+
+if(numero % 2 == 0){
+ document.write(numero +" O valor é par");
+}else
+  document.write(numero +" O valor é impar");
+
+-----------------------------------------------------------------------------------------
+Questão 4)
+
+let numero = 4;
+
+for(let i = 0; i <= 10; i++){
+   let multi = numero * i;
+  document.write(numero + "x" + i + "=" + multi + "<br>");
+}
+
+------------------------------------------------------------------------------------------
+Questão 5)
+
+let texto = prompt("digite o texto "); 
+let caracteres = texto.split ('');
+caracteres.reverse();
+let texto_reverse = caracteres.join('');
+document.write(texto_reverse);
+
+------------------------------------------------------------------------------------------
+Questão 6)
+
+let distancia = 150;
+let combustivel = 12;
+let media = distancia / combustivel;
+
+document.write("Media de comsumo:" + media );
